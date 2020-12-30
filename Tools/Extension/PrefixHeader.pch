@@ -1,0 +1,283 @@
+//
+//  PrefixHeader.pch
+// yyy002
+//
+//  Created by zzz001 on 2019/8/29.
+//  Copyright © 2019年 zzz001. All rights reserved.
+
+
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+
+#import "Masonry.h"
+#import "MJExtension.h"
+#import "UIView+Frame.h"
+#import <IQKeyboardManager/IQKeyboardManager.h>
+#import <LYEmptyView/LYEmptyViewHeader.h>
+#import "AppDelegate.h"
+#import "MBProgressHUD+YY.h"
+#import "KSPhotoBrowser.h"//图片查看
+#import "AFNetworking.h"
+#import "TabController.h"
+#import "ZJLoginViewController.h"
+#import "NoNetWorkView.h"
+
+#import "NSString+Extension.h"
+#import "UIColor+Extension.h"
+#import "UIFont+Extension.h"
+#import "UIImage+Extension.h"
+#import "NSDictionary+Extension.h"
+#import "NSDate+Extension.h"
+#import "HBorderDraw.h"
+#import "HButton.h"
+#import "HLabel.h"
+#import "HLine.h"
+#import "HView.h"
+#import "HTextView.h"
+#import "HTextField.h"
+#import "HTextFieldWithTitle.h"
+#import "HNavigationBar.h"
+#import "HViewController.h"
+#import "HDataModel.h"
+#import "UILabel+Extension.h"
+#import "UIButton+Extension.h"
+#import "UIView+Extension.h"
+#import "UIImageView+Extension.h"
+#import "HLine+Extension.h"
+#import "NSArray+Extension.h"
+#import "HttpUrl.h"
+#import "MBProgressHUD.h"
+#import "AddressBookVC.h"
+
+
+#import "UIViewController+qzs.h"
+#import "RegistereApprovalBaseVC.h"
+
+#import "ProsecutorRemoteBaseVC.h"
+
+#import "SearchAddressBookVC.h"
+#import "MJRefresh.h"
+#import "SDWebImageManager.h"
+#import "UIImageView+WebCache.h"
+#import "ZixunController.h"
+#import "Unitl.h"
+//小鱼易连
+#import <NemoSDK.h>
+#import "NemoManager.h"
+#import "VideoManager.h"
+#import "UIView+NemoFrame.h"
+#import "NemoCustomLayoutManager.h"
+#import "NemoWaitingView.h"
+#import "NemoRecordingStateView.h"
+#import "NemoMenuModel.h"
+#import "NemoButton.h"
+
+#import "YBSSuspensionView.h"//悬浮窗口
+#import "ContentCallVC.h"
+#import "OneBandResultList.h"
+#import "AddCaseDetailsController.h"
+
+#import "ProsecutorDetailVC.h"
+#import "OpinionActiviteBaseVC.h"
+#import "AddWorkListVC.h"
+#import "NoDataView.h"
+#import "HomeSpecialDetailVC.h"
+#import "ApplyMeetUserHistoryDetail.h"
+#import "ApplyMeetHistoryDetail.h"
+#import "MettingNoticeDetailVC.h"
+#import "SecurityDetailVC.h"
+#import "MettingNoticeVC.h"
+#import "MettingSecurityVC.h"
+#import "ApplyEvidenceDealController.h"
+#import "ApplyForceDealController.h"
+#import "ApplyForceUserHistoryDetail.h"
+#import "ContryHelpBaseVC.h"
+#import "ContryHelpDetailVC.h"
+#import "NoticeMessageDetailVC.h"
+#import "DealWithApplyVC.h"
+#import "ApplyDetailVC.h"
+#import "NewApplyPaperUserHistoryDetail.h"
+#import "ApplyPaperDealController.h"
+#import "ApplyMeetDealController.h"
+#import "ClueBanjieController.h"
+#import "SuggestionBanjieController2.h"
+#import "SuggestionDetailsController.h"
+#import "RegistereApprovalBaseVC.h"
+#import "LetterBanjieController.h"
+#import "CaseRoomVC.h"
+#import "CaseDetailInfoVC.h"
+#import "SJAttributesFactory.h" //富文本
+#import <NSNumber+Extension.h>
+//阿里推送
+#import <CloudPushSDK/CloudPushSDK.h>
+#import "UITextView+Placeholder.h"
+#define kScreenW [UIScreen mainScreen].bounds.size.width
+#define kScreenH [UIScreen mainScreen].bounds.size.height
+#define kWithScale(w) w * 375 / kScreenW
+
+#define KThemeColor [UIColor colorWithHexString:@"004564"]
+#define KBackColor [UIColor colorWithHexString:@"f5f5f5"]
+#define KBlackColor [UIColor colorWithHexString:@"000000"]
+#define KWhiteColor [UIColor colorWithHexString:@"ffffff"]
+#define KLineColor [UIColor colorWithHexString:@"#cdcecb"]
+
+
+//开发环境：
+//#define DevelopmentSM4 @"E2D292190663DDDB379176CFEE89F287"
+//线上环境：
+// #define DistributionSM4  @"FF20901EF7EE408D4E2CD9997F87A0D8"
+//预发环境：
+// #define AdHocSM4  @"D39E7886106D82FD606C65A594F59982"
+
+#define DevelopmentSM4 @"E2D292190663DDDB379176CFEE89F287"
+
+
+////正式环境**
+//#define BaseUrl @"https:api.zjjcy.gov.cn/api/"
+////正式地址的截取地址
+//#define SubBaseUrl @"https:api.zjjcy.gov.cn"
+////H5访问地址
+//#define StaticH5Url @"https://jwstatic.zjjcy.gov.cn/"
+////AppKey
+//#define AppKeyCode @"FV6pLa30E63p8OVWlPoh"
+////appSecret
+//#define AppSecret @"MF84H7844ykQGHDq2LXfQkfLtR3IK7pt"
+////H5需要的appSecret 正式环境
+//#define H5Secret @"N8sDmE5C3Gptckhdho1barJNytnaQQGe"
+
+
+
+//**测试环境、预发环境 文件上传地址**
+#define BaseUrl @"http://api.dev.totalapp.cn:8880/api/"
+//测试地址的截取地址
+#define SubBaseUrl @"http://api.dev.totalapp.cn"
+//H5访问地址
+#define StaticH5Url @"http://static.dev.totalapp.cn:8880/"
+//AppKey
+#define AppKeyCode @"nHQQg14vjCCzKvfAQU3G"
+#define AppID @"1488108101"
+//appSecret
+#define AppSecret @"Lqt2md8c0QWO5BLRxchPXDATSDJV9Hch"
+//H5需要的appSecret 开发、预发环境
+#define H5Secret @"WrUAQap1baaUkxAAPPURIoBtI24mcPY7"
+
+
+
+////**预发环境 文件上传地址**
+//#define BaseUrl @"https://ydjwyf.zjjcy.gov.cn/api/"
+////测试地址的截取地址
+//#define SubBaseUrl @"https://ydjwyf.zjjcy.gov.cn"
+////H5访问地址
+//#define StaticH5Url @"https://ydjwyf.zjjcy.gov.cn:7091/"
+////AppKey
+//#define AppKeyCode @"nHQQg14vjCCzKvfAQU3G"
+//#define AppID @"1488108101"
+////appSecret
+//#define AppSecret @"Lqt2md8c0QWO5BLRxchPXDATSDJV9Hch"
+////H5需要的appSecret 开发、预发环境
+//#define H5Secret @"WrUAQap1baaUkxAAPPURIoBtI24mcPY7"
+
+
+
+#define AppID @"1488108101"
+
+ //天气code
+ #define WetherApiKeyCode @"S-GAUhHyaCFUE0ZYO"
+
+//阿里推送
+#define AliPushAppKey @"29276122"
+#define AliPushAppSecret @"82b911dd297fbf0c26306a9e67252d29"
+
+
+#define KAppDelegate ((AppDelegate*)[UIApplication sharedApplication].delegate)
+
+#define KFrame(x,y,w,h)   CGRectMake(x, y, w, h)
+#define KSystemFont(f) [UIFont fontWithSize:f]
+#define KPingFangSCBoldFont(f) [UIFont PingFangSCBold:f]
+#define KPingFangSCMediumFont(f)  [UIFont PingFangSCMedium:f]
+//
+#define KCreatLable(frame,text,color,font,fatherView)   [HLabel creatLabelWithFrame:frame withText:text withTextColor:color withFont:font withContainerView:fatherView];
+//
+#define KCreatButton(frame,nomalTitle,normalTitlrColot,font,imageName,target,action,fatherVire)      [HButton creatButtonlWithFrame:frame withNormalTtite:nomalTitle withNormalTtiteColor:normalTitlrColot withFont:font withNormalImageName:imageName withTarget:target withAction:action withContainerView:fatherVire];
+//
+#define KCreatView(frame,backgrondColor,fatherView) [HView creatViewWithFrame:frame withBackgroundColor:backgrondColor withContainerView:fatherView];
+//
+#define KCreatImageView(frame,imageName,fatherView) [UIImageView creatImageViewWithFrame:frame withImageName:imageName withContainerView:fatherView];
+//
+#define KCreatLine(frame,lineStyle,backgroundColor,fatherView) [HLine creatViewLineFrame:frame withLineStyle:lineStyle withBackgroundColor:backgroundColor withContainerView:fatherView];
+
+#define iPhone5 ([UIScreen instancesRespondToSelector:@selector(currentMode)] ? CGSizeEqualToSize(CGSizeMake(640, 1136), [[UIScreen mainScreen] currentMode].size) : NO)
+#define iPhone6 ([UIScreen instancesRespondToSelector:@selector(currentMode)] ? (CGSizeEqualToSize(CGSizeMake(750, 1334), [[UIScreen mainScreen] currentMode].size)) : NO)
+
+
+// 判断iPHoneXr
+#define IS_IPHONE_Xr ([UIScreen instancesRespondToSelector:@selector(currentMode)] ? CGSizeEqualToSize(CGSizeMake(828, 1792), [[UIScreen mainScreen] currentMode].size) : NO)
+// 判断iPhoneXs Max
+#define IS_IPHONE_Xs_Max ([UIScreen instancesRespondToSelector:@selector(currentMode)] ? CGSizeEqualToSize(CGSizeMake(1242, 2688), [[UIScreen mainScreen] currentMode].size) : NO)
+// 判断iPhoneXs
+#define IS_IPHONE_Xs ([UIScreen instancesRespondToSelector:@selector(currentMode)] ? CGSizeEqualToSize(CGSizeMake(1125, 2436), [[UIScreen mainScreen] currentMode].size) : NO)
+
+// 判断iPhoneX
+#define IS_IPHONE_X ([UIScreen instancesRespondToSelector:@selector(currentMode)] ? CGSizeEqualToSize(CGSizeMake(1125, 2436), [[UIScreen mainScreen] currentMode].size) : NO)
+
+// 判断iPhone_12_Pro  iPhone_12
+#define iPhone_12_Pro ([UIScreen instancesRespondToSelector:@selector(currentMode)] ? CGSizeEqualToSize(CGSizeMake(1170, 2532), [[UIScreen mainScreen] currentMode].size) : NO)
+//1284 x 2778
+#define iPhone_12_Pro_Max ([UIScreen instancesRespondToSelector:@selector(currentMode)] ? CGSizeEqualToSize(CGSizeMake(1284, 2778), [[UIScreen mainScreen] currentMode].size) : NO)
+
+
+#define IS_PhoneXAll (IS_IPHONE_X || IS_IPHONE_Xr || IS_IPHONE_Xs_Max || iPhone_12_Pro || iPhone_12_Pro_Max)
+
+//6P
+#define IS_iPhone6Plus ([UIScreen instancesRespondToSelector:@selector(currentMode)] ? CGSizeEqualToSize(CGSizeMake(1242, 2208), [[UIScreen mainScreen] currentMode].size) : NO)
+// 6、6s
+#define IS_iPhone6     ([UIScreen instancesRespondToSelector:@selector(currentMode)] ? CGSizeEqualToSize(CGSizeMake(750, 1334), [[UIScreen mainScreen] currentMode].size) : NO)
+// 5、5s
+#define IS_iPhone5     ([UIScreen instancesRespondToSelector:@selector(currentMode)] ? CGSizeEqualToSize(CGSizeMake(640, 1136), [[UIScreen mainScreen] currentMode].size) : NO)
+// 3g、4、4s
+#define IS_iPhone4     ([UIScreen instancesRespondToSelector:@selector(currentMode)] ? CGSizeEqualToSize(CGSizeMake(640, 960), [[UIScreen mainScreen] currentMode].size) : NO)
+
+
+
+
+//add for tb23
+#define SCREEN_WIDTH ([[UIScreen mainScreen] bounds].size.width)
+#define SCREEN_HEIGHT ([[UIScreen mainScreen] bounds].size.height)
+#define _window_height [UIScreen mainScreen].bounds.size.height
+#define kNaHeight  (IS_PhoneXAll ? 88:64)
+#define kBottomHeight  (IS_PhoneXAll ? 83:49)
+#define  KStatusBarHeight  (IS_PhoneXAll?44:20)
+#define kbackImageName @"back"
+
+#define RGB(r,g,b)          [UIColor colorWithRed:(r)/255.f \
+green:(g)/255.f \
+blue:(b)/255.f \
+alpha:1.f]
+
+#define RGBA(r,g,b,a)          [UIColor colorWithRed:(r)/255.f \
+green:(g)/255.f \
+blue:(b)/255.f \
+alpha:a]
+
+
+
+#define ThemColor RGB(72,110,212)
+
+#define ImageWithName(imageName)            [UIImage  imageNamed:imageName]
+
+#ifdef DEBUG
+#define NSLog(...) NSLog(__VA_ARGS__)
+#else
+#define NSLog(...)
+#endif
+
+/**
+ * 返回一个弱引用类型
+ */
+#define kWeakSelf(type) __weak __typeof(type) weak##type = type;
+/**
+ * 返回一个强引用类型
+ */
+#define kStrongSelf(type)  __strong __typeof(type) strong##type = type;
+
+#endif
